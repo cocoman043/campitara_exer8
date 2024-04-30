@@ -21,7 +21,7 @@ To get started with LAZADO, follow these simple steps:
 
 ## Preview
 
-![LAZADO Preview](https://placekitten.com/600/400)
+![preview](https://github.com/cocoman043/campitara_exer8/assets/129296131/f87e7026-e487-4cd4-be63-99f4cd45ffe3)
 
 ## Usage
 
