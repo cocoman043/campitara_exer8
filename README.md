@@ -1,6 +1,6 @@
 # Welcome to LAZADO 🛍️
 
-![LAZADO Logo](https://placekitten.com/200/200)
+![logo](https://github.com/cocoman043/campitara_exer8/assets/129296131/d3e3b41d-0539-42e3-99ca-54168a726e31)
 
 LAZADO is a delightful React app that allows you to shop for cute items and add them to your cart with ease.
 
