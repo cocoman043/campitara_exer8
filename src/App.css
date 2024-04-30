@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+* {
+  background-image: url('https://media1.tenor.com/m/J63bVPkM9-kAAAAC/cute-anime.gif');
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex-container {
+  display:flex;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: pink;
+  padding: 1em;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-title {
+  padding: 0.5em;
+  margin: 0.5em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation-buttons{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+a {
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0.5em;
+  transition: 0.3s;
+  border-radius: 1em;
+  color: black;
+}
+
+a:hover {
+  background-color: white;
+}
+
+/* CARD */
+.card {
+  width:352px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2em;
+  border-radius: 1em;
+  border-style: solid;
+  transition: 0.3s;
+  padding: 1em;
+}
+
+.card:hover {
+  scale: 1.1;
+}
+
+img {
+  max-width: 95%;
+  max-height: 300px;
+}
+
+.item-name {
+  background-color: pink;
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+/* MAIN */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* MY MODAL */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MyModal {
+  display: flex;
+  flex-direction: row;
 }
