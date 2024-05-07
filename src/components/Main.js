@@ -38,7 +38,7 @@ const Main = () => {
         ))}
       </div>
       <button onClick={printCart}>Check Cart!</button>
-      {showCart && <Cart setCart={setCart} cart={cart} setShowCart={setShowCart} />}
+      {showCart && <Cart cart={cart} setCart={setCart} setShowCart={setShowCart} />}
     </div>
   )
 }

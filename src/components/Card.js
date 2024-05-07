@@ -1,9 +1,8 @@
 const Card = (object) => {
   const { item, cart, setCart } = object;
 
-  const addToCart = (event) => {
+  const addToCart = () => {
     console.log(item.name)
-    // setCart([...cart, item.name]);
     if (cart[item.name]) {
       cart[item.name] += 1;
       setCart(cart)
