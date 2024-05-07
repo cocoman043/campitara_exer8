@@ -69,6 +69,11 @@ img {
   margin: 0.5em;
 }
 
+.add-to-cart:hover {
+  scale:1.1;
+  cursor: pointer;
+}
+
 /* MAIN */
 
 .main {
@@ -79,7 +84,29 @@ img {
 
 /* MY MODAL */
 
-.MyModal {
+.cart {
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  border-radius: 1em;
+}
+
+.cart > * {
+  background: white;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.5);
+  z-index: 1;
 }
