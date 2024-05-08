@@ -31,13 +31,13 @@ const Main = () => {
   }
 
   return (
-    <div>
+    <div className='tree'>
       <div className='main'>
         {items.map((element) => (
           <Card item={element} cart={cart} setCart={setCart} />
         ))}
       </div>
-      <button onClick={printCart}>Check Cart!</button>
+      <button className='cart-button' onClick={printCart}>Check Cart!</button>
       {showCart && <Cart cart={cart} setCart={setCart} setShowCart={setShowCart} />}
     </div>
   )

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
 
 const Cart = (object) => {
   const { cart, setCart, setShowCart } = object;
@@ -8,13 +8,14 @@ const Cart = (object) => {
   }
 
   const deleteItem = (event) => {
-    console.log(event.target.id);
-    cart[event.target.id] -= 1;
-    if (cart[event.target.id] === 0) {
-      delete cart[event.target.id]
+    const itemName = event.target.id;
+    const updatedCart = { ...cart }; // Create a copy of the cart object
+    updatedCart[itemName] -= 1; // Update the copy
+    if (updatedCart[itemName] <= 0) {
+      delete updatedCart[itemName]; // Remove the item if quantity is zero or less
     }
-    setCart(cart)
-  }
+    setCart(updatedCart); // Update the state with the new copy
+  };
 
   useEffect(() => {
     console.log('Cart updated');
@@ -28,11 +29,14 @@ const Cart = (object) => {
   return (
     <div className="overlay">
       <div className='cart'>
-        <button onClick={toggleCart}>CLOSE</button>
+        <button className='close-button' onClick={toggleCart}>CLOSE</button>
         {cartKeys.map((itemName, i) => (
           <div className='item' key={i}>
-            {itemName}: {cart[itemName]}
-            <button id={itemName} onClick={deleteItem}>X</button>
+            {itemName}
+            <div className="right-side">
+              {cart[itemName]}
+              <button id={itemName} onClick={deleteItem}>X</button>
+            </div>
           </div>
         ))}
       </div>
