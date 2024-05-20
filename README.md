@@ -1,5 +1,3 @@
-# Welcome to LAZADO 🛍️
-
 ![image](https://github.com/cocoman043/campitara_exer8/assets/129296131/c79234b2-e0e6-4839-bf7c-cc2e15ece159)
 
 LAZADO is a delightful React app that allows you to shop for cute items and add them to your cart with ease.
